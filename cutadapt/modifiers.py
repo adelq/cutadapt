@@ -287,7 +287,7 @@ class Shortener(object):
 		self.length = length
 
 	def __call__(self, read):
-		return read[:self.length]
+		return read[-self.length:]
 
 
 class NEndTrimmer(object):
